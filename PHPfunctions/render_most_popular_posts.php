@@ -12,7 +12,7 @@ function generate_posts($file_path, $post_id1, $post_id2 = '')
         $post_id = $post['postID'];
 
         // choose id's of posts to generate them
-        if ($post_id == $post_id1 || $post_id2 != '') {
+        if (($post_id2 != '' && $post_id == $post_id2) || $post_id == $post_id1) {
             $title = $post['postTitle']['ru'];
             $category = $post['postCategory']['ru'];
             $content = $post['postContent']['ru'];

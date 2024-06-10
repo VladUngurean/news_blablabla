@@ -22,7 +22,7 @@
         {
             "postID": 2,
             "postCategory": {
-                "ru": "категорияя",
+                "ru": "категори111",
                 "ro": "categorie"
             },
             "postTitle": {
@@ -34,7 +34,7 @@
                 "ro": "content"
             },
             "postDate": "2000.20.02",
-            "postImage": "https://img.freepik.com/premium-photo/photo-deer-lying-down-grass-ai-generated_1112329-63554.jpg?w=826"
+            "postImage": "https://img.freepik.com/free-photo/kids-learnign-about-environment_23-2149176599.jpg?t=st=1718037569~exp=1718041169~hmac=0753d95eb80300a8cc0aa7a251f5e1ac0fb55dca369e2635b1af865e444edba1&w=1380"
         },
 
         {
@@ -52,13 +52,13 @@
                 "ro": "content"
             },
             "postDate": "2000.20.02",
-            "postImage": "https://img.freepik.com/premium-photo/photo-deer-lying-down-grass-ai-generated_1112329-63554.jpg?w=826"
+            "postImage": "https://img.freepik.com/premium-photo/portrait-smiling-young-woman-standing-outdoors_1048944-9762511.jpg?w=1380"
         },
         
         {
             "postID": 4,
             "postCategory": {
-                "ru": "категорияя",
+                "ru": "категорияяzzzz",
                 "ro": "categorie"
             },
             "postTitle": {
@@ -70,7 +70,7 @@
                 "ro": "content"
             },
             "postDate": "2000.20.02",
-            "postImage": "https://img.freepik.com/premium-photo/easter-eggs_8119-461.jpg?w=1380"
+            "postImage": "https://img.freepik.com/free-photo/kids-learnign-about-environment_23-2149176599.jpg?t=st=1718037569~exp=1718041169~hmac=0753d95eb80300a8cc0aa7a251f5e1ac0fb55dca369e2635b1af865e444edba1&w=1380"
         },
 
         {

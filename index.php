@@ -54,7 +54,7 @@
             <div id="most_popular_post-small">
 
                 <!-- generate posts from json files start -->
-                <?php generate_posts('posts.json', 2, 4); ?>
+                <?php generate_posts('posts.json', 2, 3); ?>
                 <!-- generate posts from json files end -->
 
             </div>
@@ -71,32 +71,52 @@
 
     <!-- content section 2 start -->
     <section class="section section_content section_content_2">
-        <!-- content section 1 start -->
         <div id="content_main" class="content_most_popular chat_section">
 
-            <div class="most_popular_post chat_section">
-                <h1>Самые популярные темы</h1>
+            <div class="most_popular_post">
+                <h2>Самые популярные темы</h2>
                 <p>С нами вы можете узнать больше.</p>
                 <img class="most_popular_post_img" src="https://i.postimg.cc/9fnXGD2W/1.jpg" alt="">
-                <div class="most_popular_post_overlay">
-                    <div class="most_popular_post_overlay-text">Palm Beach <br><span>Florida</span></div>
-                </div>
             </div>
 
 
         </div>
 
-        <div id="content_side">
-            <?php
-            require_once("PHPfunctions/render_5_random.php");
-            generate_random_posts(['posts.json', 'random.json'], 5);
-            ?>
+        <div id="content_side" class="content_side_2">
+            <a href="">
+                <img class="advertisement_img" src="https://img.freepik.com/free-photo/smiling-young-female-gardener-uniform-wearing-gardening-hat-holding-plant-holding-plant-with-clippers_141793-89024.jpg?t=st=1718040136~exp=1718043736~hmac=572b29ae73c326ca68d1d1852c36a1d29c0445a5b730b602f8623360597adaf7&w=1060" alt="">
+            </a>
+            <a href="">
+                <img class="advertisement_img" src="https://img.freepik.com/free-photo/unrecognizable-man-psushing-wheelbarrow-full-seedling_329181-20532.jpg?t=st=1718040163~exp=1718043763~hmac=dc58f2ab7ea9e0cbe4c26cc1de95f9f43d347640eb1c20cb0c3bb767d4fbfa63&w=1380" alt="">
+            </a>
         </div>
 
     </section>
     <!-- content section 2 end -->
 
     <!-- content section 3 start -->
+    <section class="section section_content section_content_3">
+        <div id="content_main" class="content_most_popular">
+
+            <div class="most_popular_post">
+                <h2>Самые популярные темы</h2>
+                <p>С нами вы можете узнать больше.</p>
+                <img class="most_popular_post_img" src="https://i.postimg.cc/9fnXGD2W/1.jpg" alt="">
+            </div>
+
+
+        </div>
+
+        <div id="content_side" class="content_side_2">
+            <a href="">
+                <img class="advertisement_img" src="https://img.freepik.com/free-photo/smiling-young-female-gardener-uniform-wearing-gardening-hat-holding-plant-holding-plant-with-clippers_141793-89024.jpg?t=st=1718040136~exp=1718043736~hmac=572b29ae73c326ca68d1d1852c36a1d29c0445a5b730b602f8623360597adaf7&w=1060" alt="">
+            </a>
+            <a href="">
+                <img class="advertisement_img" src="https://img.freepik.com/free-photo/unrecognizable-man-psushing-wheelbarrow-full-seedling_329181-20532.jpg?t=st=1718040163~exp=1718043763~hmac=dc58f2ab7ea9e0cbe4c26cc1de95f9f43d347640eb1c20cb0c3bb767d4fbfa63&w=1380" alt="">
+            </a>
+        </div>
+
+    </section>
     <!-- content section 3 end -->
 
     <!-- <div class="language-buttons">
