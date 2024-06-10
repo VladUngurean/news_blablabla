@@ -7,6 +7,7 @@ $border-color: rgba(0, 0, 0, 0.4);
 $primary-color: #333;
 
 $text-color-black: #000;
+$text-color-light: #ffffff;
 //variables end
 
 //styling remove start
@@ -93,10 +94,11 @@ body {
             padding: 12px;
             border: 1px solid rgba(255, 255, 255, 0);
             white-space: nowrap;
+            transition: all 0.2s ease-in;
+            border-radius: 20px;
         }
         a:hover {
             border: 1px solid black;
-            border-radius: 20px;
             box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
         }
         .active_nav {
@@ -128,7 +130,9 @@ body {
             max-width: 626px;
             max-height: 626px;
 
-            & > h1 {
+            & > h2 {
+                text-align: start;
+                color: $text-color-black;
                 position: absolute;
                 top: -64px;
                 font-size: 30px;
@@ -137,6 +141,7 @@ body {
                 padding-left: 5px;
             }
             & > p {
+                color: $text-color-black;
                 position: absolute;
                 top: -25px;
                 padding-left: 5px;
@@ -155,36 +160,60 @@ body {
                 bottom: 0;
                 left: 0;
                 right: 0;
-                background-color: rgba(190, 197, 203, 0.4);
+                background-color: rgba(0, 0, 0, 0.15);
                 overflow: hidden;
                 width: 100%;
-                height: 0;
+                height: 70px;
                 transition: 0.5s ease;
                 border-radius: 14px;
 
                 .most_popular_post_overlay-text {
+                    width: 100%;
+                    max-height: 50px;
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     -webkit-transform: translate(-50%, -50%);
                     -ms-transform: translate(-50%, -50%);
                     transform: translate(-50%, -50%);
-                    color: #fff;
+                    color: $text-color-light;
                     text-align: center;
                     font-size: 20px;
                     text-transform: uppercase;
                     letter-spacing: 2px;
                     font-weight: bold;
                     border-radius: 14px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
 
-                    .most_popular_post_overlay-text span {
-                        font-weight: 300;
+
+                    & > span:first-child {
+                        white-space: nowrap;
+                        max-height: 50px;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        font-weight: 500;
+                    }
+                    & > span:last-child {
+                        font-size: 16px;
+                        text-decoration: underline;
+                        color: rgba(255, 255, 255, 0.7);
                     }
                 }
             }
         }
         .most_popular_post:hover .most_popular_post_overlay {
-            height: 50%;
+            height: 30%;
+
+            .most_popular_post_overlay-text{
+                max-height: 100%;
+
+                & > span:first-child {
+                    white-space: wrap;
+                    max-height: 100%;
+
+                }
+            }
         }
 
         #most_popular_post-small {
@@ -205,6 +234,16 @@ body {
                     max-height: 301px;
                 }
             }
+
+            .most_popular_post_overlay-text {
+                & > span:first-child {
+                    font-size: 15px;
+                }
+            }
+
+            .most_popular_post:hover .most_popular_post_overlay {
+                height: 50%;
+            }
         }
     }
 
@@ -219,6 +258,9 @@ body {
         @include display-flex(center, center, column);
 
         & > a {
+            width: 100%;
+            height: 100%;
+            max-height: 136px;
             color: $text-color-black;
             border-top: 2px solid $border-color;
             // border-bottom: 1px solid green;
@@ -229,7 +271,9 @@ body {
         }
 
         .content_side_wraper {
-            @include display-flex(center, center, row);
+            padding: 24px;
+
+            @include display-flex(center, flex-start, row);
             gap: 10px;
 
             & > img {
@@ -244,36 +288,37 @@ body {
                 gap: 6px;
 
                 & > p {
-                    padding: 8px 0;
+                    // padding: 8px 0;
                 }
             }
         }
     }
 }
 
+//content section 2 chat start
 .section_content_2 {
-    & > #content_main {
-        max-width: 100%;
+    #content_main {
+        // max-width: 100%;
         // justify-content: space-between;
-        & > .most_popular_post {
+        .most_popular_post {
             max-width: 1016px;
             max-height: 684px;
-            
-            & > .most_popular_post_img {
+
+            .most_popular_post_img {
                 max-width: 1016px;
                 max-height: 684px;
             }
         }
 
-        #most_popular_post-small{
+        #most_popular_post-small {
             max-width: 496px;
             max-height: 684px;
-            
-            .most_popular_post{
+
+            .most_popular_post {
                 max-width: 496px;
                 max-height: 330px;
-                
-                .most_popular_post_img{
+
+                .most_popular_post_img {
                     max-width: 496px;
                     max-height: 330px;
                 }
@@ -285,7 +330,7 @@ body {
     .section_content {
         max-height: 100%;
     }
-    .section_content > #content_main {
+    .section_content #content_main {
         @include display-flex(center, center, column);
         max-height: 100%;
     }
@@ -295,5 +340,6 @@ body {
         max-width: 626px;
     }
 }
+//content section 2 chat end
 
 //content section end

@@ -43,83 +43,28 @@
     <section class="section section_content">
         <!-- content section 1 start -->
         <div id="content_main" class="content_most_popular">
+            <!-- generate posts from json files start -->
+            <?php
+            require_once("PHPfunctions/render_most_popular_posts.php");
+            generate_posts('posts.json', 1);
+            ?>
+            <!-- generate posts from json files end -->
 
-            <div class="most_popular_post">
-                <h1>Самые популярные темы</h1>
-                <p>С нами вы можете узнать больше.</p>
-                <img class="most_popular_post_img" src="https://i.postimg.cc/9fnXGD2W/1.jpg" alt="">
-                <div class="most_popular_post_overlay">
-                    <div class="most_popular_post_overlay-text">Palm Beach <br><span>Florida</span></div>
-                </div>
-            </div>
 
             <div id="most_popular_post-small">
-                <div class="most_popular_post">
-                    <img class="most_popular_post_img" src="https://i.postimg.cc/9fnXGD2W/1.jpg" alt="">
-                    <div class="most_popular_post_overlay">
-                        <div class="most_popular_post_overlay-text">Palm Beach <br><span>Florida</span></div>
-                    </div>
-                </div>
-                <div class="most_popular_post">
-                    <img class="most_popular_post_img" src="https://i.postimg.cc/9fnXGD2W/1.jpg" alt="">
-                    <div class="most_popular_post_overlay">
-                        <div class="most_popular_post_overlay-text">Palm Beach <br><span>Florida</span></div>
-                    </div>
-                </div>
-            </div>
 
+                <!-- generate posts from json files start -->
+                <?php generate_posts('posts.json', 2, 4); ?>
+                <!-- generate posts from json files end -->
+
+            </div>
         </div>
 
         <div id="content_side">
-            <a href="">
-                <div class="content_side_wraper">
-                    <img src="" alt="">
-                    <div class="content_side_title">
-                        <h3>Lorem ipsum dolor sit amet consectetur. Tellus a ac metus </h3>
-                        <p class="">Туризм</p>
-                    </div>
-                </div>
-            </a>
-            <a href="">
-                <!-- <hr> -->
-                <div class="content_side_wraper">
-                    <img src="" alt="">
-                    <div class="content_side_title">
-                        <h3>Lorem ipsum dolor sit amet consectetur. Tellus a ac metus </h3>
-                        <p class="">Туризм</p>
-                    </div>
-                </div>
-            </a>
-            <a href="">
-                <!-- <hr> -->
-                <div class="content_side_wraper">
-                    <img src="" alt="">
-                    <div class="content_side_title">
-                        <h3>Lorem ipsum dolor sit amet consectetur. Tellus a ac metus </h3>
-                        <p class="">Туризм</p>
-                    </div>
-                </div>
-            </a>
-            <a href="">
-                <!-- <hr> -->
-                <div class="content_side_wraper">
-                    <img src="" alt="">
-                    <div class="content_side_title">
-                        <h3>Lorem ipsum dolor sit amet consectetur. Tellus a ac metus </h3>
-                        <p class="">Туризм</p>
-                    </div>
-                </div>
-            </a>
-            <a href="">
-                <!-- <hr> -->
-                <div class="content_side_wraper">
-                    <img src="" alt="">
-                    <div class="content_side_title">
-                        <h3>Lorem ipsum dolor sit amet consectetur. Tellus a ac metus </h3>
-                        <p class="">Туризм</p>
-                    </div>
-                </div>
-            </a>
+            <?php
+            require_once("PHPfunctions/render_5_random.php");
+            generate_random_posts(['posts.json', 'random.json'], 5);
+            ?>
         </div>
     </section>
     <!-- content section 1 end -->
@@ -127,9 +72,9 @@
     <!-- content section 2 start -->
     <section class="section section_content section_content_2">
         <!-- content section 1 start -->
-        <div id="content_main" class="content_most_popular">
+        <div id="content_main" class="content_most_popular chat_section">
 
-            <div class="most_popular_post">
+            <div class="most_popular_post chat_section">
                 <h1>Самые популярные темы</h1>
                 <p>С нами вы можете узнать больше.</p>
                 <img class="most_popular_post_img" src="https://i.postimg.cc/9fnXGD2W/1.jpg" alt="">
@@ -138,21 +83,14 @@
                 </div>
             </div>
 
-            <div id="most_popular_post-small">
-                <div class="most_popular_post">
-                    <img class="most_popular_post_img" src="https://i.postimg.cc/9fnXGD2W/1.jpg" alt="">
-                    <div class="most_popular_post_overlay">
-                        <div class="most_popular_post_overlay-text">Palm Beach <br><span>Florida</span></div>
-                    </div>
-                </div>
-                <div class="most_popular_post">
-                    <img class="most_popular_post_img" src="https://i.postimg.cc/9fnXGD2W/1.jpg" alt="">
-                    <div class="most_popular_post_overlay">
-                        <div class="most_popular_post_overlay-text">Palm Beach <br><span>Florida</span></div>
-                    </div>
-                </div>
-            </div>
 
+        </div>
+
+        <div id="content_side">
+            <?php
+            require_once("PHPfunctions/render_5_random.php");
+            generate_random_posts(['posts.json', 'random.json'], 5);
+            ?>
         </div>
 
     </section>

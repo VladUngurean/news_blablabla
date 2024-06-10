@@ -1,0 +1,113 @@
+{
+    "posts": [
+        {
+
+            "postID": 1,
+            "postCategory": {
+                "ru": "категорияя",
+                "ro": "categorie"
+            },
+            "postTitle": {
+                "ru": "Lorem ipsum dolor sit amet consectetur. Tellus a ac metus Lorem ipsum dolor sit amet consectetur. Tellus a ac metus ",
+                "ro": "titlu yaya fff ds"
+            },
+            "postContent": {
+                "ru": "контент",
+                "ro": "content"
+            },
+            "postDate": "2000.20.02",
+            "postImage": "https://img.freepik.com/premium-photo/dog-laying_3248-839.jpg?w=740"
+        },
+
+        {
+            "postID": 2,
+            "postCategory": {
+                "ru": "категорияя",
+                "ro": "categorie"
+            },
+            "postTitle": {
+                "ru": "Lorem ipsum dolor sit amet consectetur. Tellus a ac metus Lorem ipsum dolor sit amet consectetur. Tellus a ac metus 1",
+                "ro": "titlu1"
+            },
+            "postContent": {
+                "ru": "контент",
+                "ro": "content"
+            },
+            "postDate": "2000.20.02",
+            "postImage": "https://img.freepik.com/premium-photo/photo-deer-lying-down-grass-ai-generated_1112329-63554.jpg?w=826"
+        },
+
+        {
+            "postID": 3,
+            "postCategory": {
+                "ru": "категорияя",
+                "ro": "categorie"
+            },
+            "postTitle": {
+                "ru": "Заголовоr2",
+                "ro": "titlu2"
+            },
+            "postContent": {
+                "ru": "контент",
+                "ro": "content"
+            },
+            "postDate": "2000.20.02",
+            "postImage": "https://img.freepik.com/premium-photo/photo-deer-lying-down-grass-ai-generated_1112329-63554.jpg?w=826"
+        },
+        
+        {
+            "postID": 4,
+            "postCategory": {
+                "ru": "категорияя",
+                "ro": "categorie"
+            },
+            "postTitle": {
+                "ru": "Lorem ipsum dolor sit amet consectetur. Tellus a ac metus ",
+                "ro": "titlu3"
+            },
+            "postContent": {
+                "ru": "контент",
+                "ro": "content"
+            },
+            "postDate": "2000.20.02",
+            "postImage": "https://img.freepik.com/premium-photo/easter-eggs_8119-461.jpg?w=1380"
+        },
+
+        {
+            "postID": 5,
+            "postCategory": {
+                "ru": "категорияя",
+                "ro": "categorie"
+            },
+            "postTitle": {
+                "ru": "Lorem ipsum dolor sit amet consectetur. Tellus a ac metus Lorem ipsum dolor sit amet consectetur. Tellus a ac metus 4",
+                "ro": "titlu4"
+            },
+            "postContent": {
+                "ru": "контент",
+                "ro": "Lorem ipsum dolor sit amet consectetur. Tellus a ac metus "
+            },
+            "postDate": "2000.20.02",
+            "postImage": "path to img"
+        },
+
+        {
+            "postID": 6,
+            "postCategory": {
+                "ru": "категорияда ну на",
+                "ro": "categorie"
+            },
+            "postTitle": {
+                "ru": "Lorem ipsum dolor sit amet consectetur. Tellus a ac metus Lorem ipsum dolor sit amet consectetur. Tellus a ac metus 4",
+                "ro": "titlu4"
+            },
+            "postContent": {
+                "ru": "рандом тест",
+                "ro": "Lorem ipsum dolor sit amet consectetur. Tellus a ac metus "
+            },
+            "postDate": "2000.20.02",
+            "postImage": "path to img"
+        }
+
+    ]
+}

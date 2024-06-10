@@ -1,0 +1,174 @@
+{
+    "posts": [
+        {
+            "postID": 1,
+            "postCategory": {
+                "ru": "категорияя",
+                "ro": "categorie"
+            },
+            "postTitle": {
+                "ru": "Заголовок",
+                "ro": "titlu yaya fff ds"
+            },
+            "postContent": {
+                "ru": "контент",
+                "ro": "content"
+            },
+            "postDate": "2000.20.02",
+            "postImage": "https://img.freepik.com/premium-photo/dog-laying_3248-839.jpg?w=740"
+        },
+        {
+            "postID": 2,
+            "postCategory": {
+                "ru": "категория2",
+                "ro": "categorie2"
+            },
+            "postTitle": {
+                "ru": "Заголовок2",
+                "ro": "titlu2"
+            },
+            "postContent": {
+                "ru": "контент2",
+                "ro": "content2"
+            },
+            "postDate": "2001.21.03",
+            "postImage": "https://img.freepik.com/premium-photo/cat-laying_3248-839.jpg?w=740"
+        },
+        {
+            "postID": 3,
+            "postCategory": {
+                "ru": "категория3",
+                "ro": "categorie3"
+            },
+            "postTitle": {
+                "ru": "Заголовок3",
+                "ro": "titlu3"
+            },
+            "postContent": {
+                "ru": "контент3",
+                "ro": "content3"
+            },
+            "postDate": "2002.22.04",
+            "postImage": "https://img.freepik.com/premium-photo/bird-laying_3248-839.jpg?w=740"
+        },
+        {
+            "postID": 4,
+            "postCategory": {
+                "ru": "категория4",
+                "ro": "categorie4"
+            },
+            "postTitle": {
+                "ru": "Заголовок4",
+                "ro": "titlu4"
+            },
+            "postContent": {
+                "ru": "контент4",
+                "ro": "content4"
+            },
+            "postDate": "2003.23.05",
+            "postImage": "https://img.freepik.com/premium-photo/fish-laying_3248-839.jpg?w=740"
+        },
+        {
+            "postID": 5,
+            "postCategory": {
+                "ru": "категория5",
+                "ro": "categorie5"
+            },
+            "postTitle": {
+                "ru": "Заголовок5",
+                "ro": "titlu5"
+            },
+            "postContent": {
+                "ru": "контент5",
+                "ro": "content5"
+            },
+            "postDate": "2004.24.06",
+            "postImage": "https://img.freepik.com/premium-photo/rabbit-laying_3248-839.jpg?w=740"
+        },
+        {
+            "postID": 6,
+            "postCategory": {
+                "ru": "категория6",
+                "ro": "categorie6"
+            },
+            "postTitle": {
+                "ru": "Заголовок6",
+                "ro": "titlu6"
+            },
+            "postContent": {
+                "ru": "контент6",
+                "ro": "content6"
+            },
+            "postDate": "2005.25.07",
+            "postImage": "https://img.freepik.com/premium-photo/lion-laying_3248-839.jpg?w=740"
+        },
+        {
+            "postID": 7,
+            "postCategory": {
+                "ru": "категория7",
+                "ro": "categorie7"
+            },
+            "postTitle": {
+                "ru": "Заголовок7",
+                "ro": "titlu7"
+            },
+            "postContent": {
+                "ru": "контент7",
+                "ro": "content7"
+            },
+            "postDate": "2006.26.08",
+            "postImage": "https://img.freepik.com/premium-photo/tiger-laying_3248-839.jpg?w=740"
+        },
+        {
+            "postID": 8,
+            "postCategory": {
+                "ru": "категория8",
+                "ro": "categorie8"
+            },
+            "postTitle": {
+                "ru": "Заголовок8",
+                "ro": "titlu8"
+            },
+            "postContent": {
+                "ru": "контент8",
+                "ro": "content8"
+            },
+            "postDate": "2007.27.09",
+            "postImage": "https://img.freepik.com/premium-photo/elephant-laying_3248-839.jpg?w=740"
+        },
+        {
+            "postID": 9,
+            "postCategory": {
+                "ru": "категория9",
+                "ro": "categorie9"
+            },
+            "postTitle": {
+                "ru": "Заголовок9",
+                "ro": "titlu9"
+            },
+            "postContent": {
+                "ru": "контент9",
+                "ro": "content9"
+            },
+            "postDate": "2008.28.10",
+            "postImage": "https://img.freepik.com/premium-photo/monkey-laying_3248-839.jpg?w=740"
+        },
+        {
+            "postID": 10,
+            "postCategory": {
+                "ru": "категория10",
+                "ro": "categorie10"
+            },
+            "postTitle": {
+                "ru": "Заголовок10",
+                "ro": "titlu10"
+            },
+            "postContent": {
+                "ru": "контент10",
+                "ro": "content10"
+            },
+            "postDate": "2009.29.11",
+            "postImage": "https://img.freepik.com/premium-photo/bear-laying_3248-839.jpg?w=740"
+        }
+    ]
+}
