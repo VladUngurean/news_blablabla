@@ -272,6 +272,7 @@ body .main_section {
   flex-direction: column;
 }
 .sidebar_content > a {
+  justify-content: flex-start;
   width: 100%;
   height: 100%;
   max-height: 136px;
@@ -350,6 +351,10 @@ body .main_section {
   border-radius: 6px;
 }
 
+.aditional_content_1 .sidebar_content::before {
+  width: 0;
+  height: 0;
+}
 .aditional_content_1 .main_content {
   display: flex;
   align-items: flex-start;
