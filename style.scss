@@ -42,7 +42,7 @@ body {
 
     transition: transform 0.5s ease-in-out;
     overflow-x: hidden;
-    .section {
+    .main_section {
         position: relative;
         width: 100%;
         max-width: 1536px;
@@ -122,12 +122,12 @@ body {
 // header end
 
 //content section start
-.section_content {
+.content_section {
     max-height: 1536px;
     @include display-flex(flex-start, space-between, row);
     // gap: 24px;
 
-    .content_main {
+    .main_content {
         width: 100%;
         max-width: 1016px;
         max-height: 758px;
@@ -136,11 +136,11 @@ body {
         gap: 24px;
         padding-left: 15px;
 
-        .most_popular_post {
+        .popular_post {
             position: relative;
             width: 100%;
             max-width: 626px;
-            // max-height: 626px;
+            max-height: 626px;
 
             & > h2 {
                 text-align: start;
@@ -161,7 +161,7 @@ body {
                 pointer-events: none;
             }
 
-            .most_popular_post_img {
+            .popular_post_img {
                 display: inline-block;
                 width: 100%;
                 max-width: 626px;
@@ -169,7 +169,7 @@ body {
                 height: auto;
                 border-radius: 14px;
             }
-            .most_popular_post_overlay {
+            .popular_post_overlay {
                 position: absolute;
                 bottom: 0;
                 left: 0;
@@ -181,7 +181,7 @@ body {
                 transition: 0.5s ease;
                 border-radius: 14px;
 
-                .most_popular_post_overlay-text {
+                .popular_post_overlay-text {
                     width: 100%;
                     max-height: 50px;
                     position: absolute;
@@ -216,10 +216,10 @@ body {
                 }
             }
         }
-        .most_popular_post:hover .most_popular_post_overlay {
+        .popular_post:hover .popular_post_overlay {
             height: 30%;
 
-            .most_popular_post_overlay-text {
+            .popular_post_overlay-text {
                 max-height: 100%;
 
                 & > span:first-child {
@@ -229,7 +229,7 @@ body {
             }
         }
 
-        #most_popular_post-small {
+        .popular_post-small {
             width: 100%;
             max-width: 366px;
             @include display-flex(center, center, column);
@@ -240,11 +240,11 @@ body {
                 width: 100%;
             }
 
-            .most_popular_post {
+            .popular_post {
                 // max-width: 366px;
                 max-height: 301px;
 
-                .most_popular_post_img {
+                .popular_post_img {
                     width: 100%;
                     max-width: 366px;
                     // height: 100%;
@@ -253,19 +253,19 @@ body {
                 }
             }
 
-            .most_popular_post_overlay-text {
+            .popular_post_overlay-text {
                 & > span:first-child {
                     font-size: 15px;
                 }
             }
 
-            .most_popular_post:hover .most_popular_post_overlay {
+            .popular_post:hover .popular_post_overlay {
                 height: 50%;
             }
         }
     }
 
-    .content_side {
+    .sidebar_content {
         position: relative;
         width: 30%;
         min-width: 320px;
@@ -291,7 +291,7 @@ body {
             border-bottom: 2px solid $border-color;
         }
 
-        .content_side_wraper {
+        .sidebar_content_wraper {
             padding: 24px;
 
             @include display-flex(center, flex-start, row);
@@ -304,7 +304,7 @@ body {
                 border-radius: 50%;
             }
 
-            .content_side_title {
+            .sidebar_content_title {
                 @include display-flex(flex-start, center, column);
                 gap: 6px;
 
@@ -324,7 +324,7 @@ body {
         }
     }
 
-    .content_side::before{
+    .sidebar_content::before{
         content: "";
         width: 2px;
         height: 100%;
@@ -334,7 +334,7 @@ body {
         background-color: $border-color;
     }
 
-    .content_side_2 {
+    .sidebar_ads {
         width: 30% !important;
         border: none !important;
         padding-left: 0 !important;
@@ -348,7 +348,7 @@ body {
             max-height: 330px !important;
             height: 330px !important;
             border: none !important;
-            & > .advertisement_img {
+            & > .ad_img {
                 width: 100%;
                 max-width: 496px;
                 height: 100%;
@@ -361,29 +361,29 @@ body {
 }
 
 //content section 2 chat start
-.section_content_2 {
-    .content_main {
+.aditional_content_1 {
+    .main_content {
         // max-width: 100%;
         // justify-content: space-between;
-        .most_popular_post {
+        .popular_post {
             max-width: 1016px;
             // max-height: 684px;
 
-            .most_popular_post_img {
+            .popular_post_img {
                 max-width: 1016px;
                 max-height: 684px;
             }
         }
 
-        #most_popular_post-small {
+        .popular_post-small {
             max-width: 496px;
             max-height: 684px;
 
-            .most_popular_post {
+            .popular_post {
                 max-width: 496px;
                 max-height: 330px;
 
-                .most_popular_post_img {
+                .popular_post_img {
                     max-width: 496px;
                     max-height: 330px;
                 }
@@ -401,29 +401,33 @@ body {
 }
 
 @media (max-width: 1560px) {
-    .section_content {
+    .content_section {
         max-height: 100%;
     }
-    .section_content .content_main {
+    .content_section .main_content {
         @include display-flex(center, center, column);
         max-height: 100%;
     }
 
-    .section_content .content_main #most_popular_post-small {
+    .content_section .main_content .popular_post-small {
         @include display-flex(center, center, row);
         max-width: 626px;
     }
 
-    .content_side{
+    .content_section .main_content .popular_post .popular_post_img{
+        // aspect-ratio: 0;
+    }
+
+    .sidebar_content{
         position: sticky !important;
         top: 10px;
     }
 
-    .section_content_2 .content_main .chat_section {
+    .aditional_content-2 .main_content .chat_section {
         max-width: 626px;
     }
 
-    .section_content .content_side_2 a{
+    .content_section .sidebar_ads a{
         height: 100% !important; 
     }
 }

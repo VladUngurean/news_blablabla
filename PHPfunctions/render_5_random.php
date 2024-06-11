@@ -29,9 +29,9 @@ function generate_random_posts($file_paths, $post_limit)
 
         echo '
             <a href="">
-                <div class="content_side_wraper">
+                <div class="sidebar_content_wraper">
                     <img src="' . $image . '" alt="">
-                    <div class="content_side_title">
+                    <div class="sidebar_content_title">
                         <p> '. $title .' </p>
                         <p class=""> '. $category .' </p>
                     </div>

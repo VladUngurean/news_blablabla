@@ -21,7 +21,7 @@ function generate_posts($file_path, $post_id1, $post_id2 = '')
 
             echo '
             <a href="">
-                <div class="most_popular_post">';
+                <div class="popular_post">';
 
             if ($post_id2 == '') {
                 echo '
@@ -31,9 +31,9 @@ function generate_posts($file_path, $post_id1, $post_id2 = '')
             }
 
             echo '
-                    <img class="most_popular_post_img" src="' . $image . '" alt="">
-                    <div class="most_popular_post_overlay">
-                        <div class="most_popular_post_overlay-text"><span>' . $title . '</span> <br><span>' . $category . '</span></div>
+                    <img class="popular_post_img" src="' . $image . '" alt="">
+                    <div class="popular_post_overlay">
+                        <div class="popular_post_overlay-text"><span>' . $title . '</span> <br><span>' . $category . '</span></div>
                     </div>
                 </div>
             </a>';
