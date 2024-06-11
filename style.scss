@@ -1,5 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+//mixin start
+
+@mixin display-flex($align, $justify, $direction) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+//mixin end
+//keyframe start
+@keyframes move {
+    from {
+        transform: translateX(-500px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes move-back {
+    from {
+        transform: translateX(50px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+//keyframe end
+
 //variables start
 $font-montserat: "Montserrat", sans-serif;
 $background-color: #fbfbfb;
@@ -15,21 +44,17 @@ a,
 a:focus,
 a:visited,
 a:hover {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
     text-decoration: none;
     color: #ea3a3a;
+    @include display-flex(center, center, initial);
+
 }
 //styling remove end
 
-//mixin start
 
-@mixin display-flex($align, $justify, $direction) {
-    display: flex;
-    align-items: $align;
-    justify-content: $justify;
-    flex-direction: $direction;
-}
-
-//mixin end
 * {
     font-family: "Montserrat", sans-serif;
     margin: 0;
@@ -49,7 +74,7 @@ body {
         min-width: 320px;
         padding: 0 10px;
         transition: transform 0.5s ease-in-out;
-        margin-bottom: 120px;
+        margin-bottom: 180px;
         gap: 48px;
         // border-left: 2px solid $border-color;
         // border-right: 2px solid $border-color;
@@ -142,32 +167,13 @@ body {
     max-width: 626px;
     max-height: 626px;
 
-    & > h2 {
-        text-align: start;
-        color: $text-color-black;
-        position: absolute;
-        top: -64px;
-        font-size: 30px;
-        font-weight: 500;
-        border-left: 1px solid rgb(130, 130, 130);
-        padding-left: 5px;
-        pointer-events: none;
-    }
-    & > p {
-        color: $text-color-black;
-        position: absolute;
-        top: -25px;
-        padding-left: 5px;
-        pointer-events: none;
-    }
-
     .popular_post_img {
         display: inline-block;
         width: 100%;
         max-width: 626px;
         aspect-ratio: 1;
         height: auto;
-        border-radius: 14px;
+        border-radius: 6px;
     }
     .popular_post_overlay {
         position: absolute;
@@ -179,7 +185,7 @@ body {
         width: 100%;
         height: 70px;
         transition: 0.5s ease;
-        border-radius: 14px;
+        border-radius: 6px;
 
         .popular_post_overlay-text {
             width: 100%;
@@ -196,7 +202,7 @@ body {
             text-transform: uppercase;
             letter-spacing: 2px;
             font-weight: bold;
-            border-radius: 14px;
+            border-radius: 6px;
             text-overflow: ellipsis;
             overflow: hidden;
 
@@ -214,6 +220,26 @@ body {
                 color: rgba(255, 255, 255, 0.7);
             }
         }
+    }
+}
+.post_title_container {
+    position: absolute;
+    top: -70px;
+    padding-left: 5px;
+    border-left: 1px solid rgb(130, 130, 130);
+    overflow: hidden;
+    pointer-events: none;
+
+    & > h2 {
+        text-align: start;
+        color: $text-color-black;
+        font-size: 30px;
+        font-weight: 500;
+        animation: move 1.5s;
+    }
+    & > p {
+        color: $text-color-black;
+        animation: move-back 1.5s;
     }
 }
 .popular_post:hover .popular_post_overlay {
@@ -332,6 +358,8 @@ body {
 }
 
 .sidebar_ads {
+    position: sticky;
+    top: 5px;
     width: 30% !important;
     border: none !important;
     padding-left: 0 !important;
@@ -351,19 +379,21 @@ body {
             height: 100%;
             min-height: 100%;
             max-height: 330px;
-            border-radius: 14px;
+            border-radius: 6px;
         }
     }
 }
 
-//content section 2 chat start
+//content section 1 chat start
 .aditional_content_1 {
     .main_content {
+        @include display-flex(flex-start, center, column);
+        max-height: 100%;
         // max-width: 100%;
         // justify-content: space-between;
         .popular_post {
             max-width: 1016px;
-            // max-height: 684px;
+            max-height: 684px;
 
             .popular_post_img {
                 max-width: 1016px;
@@ -385,16 +415,51 @@ body {
                 }
             }
         }
+
+        .two_posts {
+            @include display-flex(flex-start, center, row);
+            max-width: 1016px;
+            gap: 24px;
+
+            margin-top: 120px;
+            .popular_post {
+                max-width: 496px;
+                max-height: 402px;
+            }
+            .post_title_container {
+                position: initial;
+                margin-bottom: 24px;
+                // top: 0;
+                // max-width: 340px;
+
+                
+                h2 {
+                    font-size: 24px;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    pointer-events: all;
+                }
+            }
+            .popular_post_img {
+                max-width: 496px;
+                max-height: 332px;
+                aspect-ratio: auto;
+            }
+        }
     }
 }
 
+//content section 1 chat end
+
+//content section 2 chat start
+
+//content section 2 chat end
+
+//media start
 /* Extra large devices (large desktops, 1200px and up) */
-@media (max-width: 1200px) {
-    nav {
-        display: none !important;
-    }
-}
-
 @media (max-width: 1560px) {
     .content_section {
         max-height: 100%;
@@ -409,21 +474,31 @@ body {
         max-width: 626px;
     }
 
-
-
     .sidebar_content {
         position: sticky !important;
         top: 10px;
     }
 
-    .aditional_content_1 .main_content .popular_post{
+    .aditional_content_1 .main_content .popular_post {
         max-width: 626px;
     }
 
     .content_section .sidebar_ads a {
         height: 100% !important;
     }
-}
-//content section 2 chat end
 
-//content section end
+    //content 2 start
+    .aditional_content_1 .main_content .two_posts{
+        flex-direction: column;
+    }
+    // .aditional_content_1 .main_content .two_posts .popular_post{
+    //     max-width: 626px;
+    // }
+    //content 2 end
+}
+
+@media (max-width: 1200px) {
+    nav {
+        display: none !important;
+    }
+}

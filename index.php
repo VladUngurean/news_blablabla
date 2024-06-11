@@ -53,15 +53,15 @@
         <div class="main_content">
             <!-- generate posts from json files start -->
             <?php
-            require_once("PHPfunctions/render_popular_posts.php");
-            generate_posts('posts.json', 1);
+                require_once("PHPfunctions/render_posts.php");
+                render_posts('posts.json', 1);
             ?>
             <!-- generate posts from json files end -->
 
             <div class="popular_post-small">
 
                 <!-- generate posts from json files start -->
-                <?php generate_posts('posts.json', 2, 3); ?>
+                <?php render_posts('posts.json', 2, 3); ?>
                 <!-- generate posts from json files end -->
 
             </div>
@@ -69,7 +69,6 @@
 
         <div class="sidebar_content">
             <?php
-            require_once("PHPfunctions/render_5_random.php");
             generate_random_posts(['posts.json', 'random.json'], 5);
             ?>
         </div>
@@ -81,20 +80,18 @@
         <div class="main_content">
 
             <div class="popular_post chat_section">
-                <h2>Что-то там о чат боте</h2>
-                <p>Спрашивай и узнавай.</p>
+                <div class="post_title_container">
+                    <h2>Что-то там о чат боте</h2>
+                    <p>Спрашивай и узнавай.</p>
+                </div>
                 <a href="">
                     <img class="popular_post_img chat_section" src="https://i.postimg.cc/9fnXGD2W/1.jpg" alt="">
                 </a>
+            </div>
 
-                <!-- <div class="">
-                    <a href="">
-                        <img class="ad_img" src="https://img.freepik.com/free-photo/smiling-young-female-gardener-uniform-wearing-gardening-hat-holding-plant-holding-plant-with-clippers_141793-89024.jpg?t=st=1718040136~exp=1718043736~hmac=572b29ae73c326ca68d1d1852c36a1d29c0445a5b730b602f8623360597adaf7&w=1060" alt="">
-                    </a>
-                    <a href="">
-                        <img class="ad_img" src="https://img.freepik.com/free-photo/unrecognizable-man-psushing-wheelbarrow-full-seedling_329181-20532.jpg?t=st=1718040163~exp=1718043763~hmac=dc58f2ab7ea9e0cbe4c26cc1de95f9f43d347640eb1c20cb0c3bb767d4fbfa63&w=1380" alt="">
-                    </a>
-                </div> -->
+            <div class="two_posts">
+                <?php render_one_post('posts.json', 2); ?>
+                <?php render_one_post('posts.json', 3); ?>
             </div>
         </div>
 
@@ -109,15 +106,15 @@
     </section>
     <!-- content section 2 end -->
 
+
+
     <!-- content section 3 start -->
+    <section class="main_section content_section aditional_content_2">
 
+        <!-- generate posts from json files start -->
+        <!-- generate posts from json files end -->
+    </section>
     <!-- content section 3 end -->
-
-    <!-- <div class="language-buttons">
-        <button data-lang="ru" onclick="setLanguage('ru')">Русский</button>
-        <button data-lang="ro" onclick="setLanguage('ro')">Română</button>
-    </div>
-    <div id="posts-container"></div> -->
 </body>
 
 </html>
