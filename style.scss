@@ -45,15 +45,13 @@ a:focus,
 a:visited,
 a:hover {
     display: inline-block;
-    width: 100%;
+    // width: 100%;
     height: 100%;
     text-decoration: none;
     color: #ea3a3a;
     @include display-flex(center, center, initial);
-
 }
 //styling remove end
-
 
 * {
     font-family: "Montserrat", sans-serif;
@@ -120,6 +118,7 @@ body {
         width: 100%;
         max-width: 1170px;
         @include display-flex(center, space-between, row);
+        gap: 24px;
         a {
             font-family: "Montserrat", sans-serif;
             font-weight: 500;
@@ -153,11 +152,11 @@ body {
     .main_content {
         width: 100%;
         max-width: 1016px;
-        max-height: 758px;
+        // max-height: 758px;
         @include display-flex(flex-start, center, row);
         // flex-wrap: wrap;
         gap: 24px;
-        padding-left: 15px;
+        // padding-left: 15px;
     }
 }
 
@@ -228,7 +227,7 @@ body {
     padding-left: 5px;
     border-left: 1px solid rgb(130, 130, 130);
     overflow: hidden;
-    pointer-events: none;
+    // pointer-events: none;
 
     & > h2 {
         text-align: start;
@@ -259,7 +258,7 @@ body {
     max-width: 366px;
     @include display-flex(center, center, column);
     gap: 24px;
-    max-height: 626px;
+    // max-height: 626px;
 
     & > a {
         width: 100%;
@@ -387,7 +386,7 @@ body {
 
 //content section 1 chat start
 .aditional_content_1 {
-    .sidebar_content::before{
+    .sidebar_content::before {
         width: 0;
         height: 0;
     }
@@ -437,7 +436,6 @@ body {
                 // top: 0;
                 // max-width: 340px;
 
-                
                 h2 {
                     font-size: 24px;
                     display: -webkit-box;
@@ -461,6 +459,64 @@ body {
 
 //content section 2 chat start
 
+.aditional_content_2 {
+    .sidebar_ads {
+        opacity: 0;
+        pointer-events: none;
+    }
+    .newest_posts_container {
+        @include display-flex(center, center, row);
+        gap: 24px;
+    }
+
+    .popular_post_overlay {
+        display: none;
+    }
+    .newest_posts {
+        @include display-flex(initial, center, column);
+        gap: 24px;
+        max-width: 496px;
+    }
+    .newest_posts > a {
+        border: 1px solid $border-color;
+        border-radius: 6px;
+        max-height: 220px;
+    }
+    .popular_post {
+        @include display-flex(flex-start, center, row);
+        max-width: 496px;
+    }
+    .post_title_container {
+        position: initial;
+        width: 100%;
+        max-width: 260px;
+        padding: 20px 10px 10px 20px;
+        border-left: none;
+        h2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            display: -webkit-box;
+            -webkit-line-clamp: 7;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+    .popular_post_img {
+        max-width: 236px;
+        max-height: 220px;
+        border-radius: 0 6px 6px 0;
+    }
+}
+
 //content section 2 chat end
 
 //media start
@@ -469,6 +525,7 @@ body {
     .content_section {
         max-height: 100%;
     }
+
     .content_section .main_content {
         @include display-flex(center, center, column);
         max-height: 100%;
@@ -479,26 +536,58 @@ body {
         max-width: 626px;
     }
 
+    .content_section .sidebar_ads a {
+        height: 100% !important;
+    }
+
     .sidebar_content {
         position: sticky !important;
         top: 10px;
     }
 
+
+    //content 1 start
     .aditional_content_1 .main_content .popular_post {
         max-width: 626px;
     }
-
-    .content_section .sidebar_ads a {
-        height: 100% !important;
+    .aditional_content_1 .main_content .two_posts .popular_post {
+        max-width: 626px;
+        max-height: 489px;
+    }
+    .aditional_content_1 .main_content .two_posts .popular_post_img {
+        max-width: 626px;
+        max-height: 416px;
     }
 
-    //content 2 start
-    .aditional_content_1 .main_content .two_posts{
+    .aditional_content_1 .main_content .two_posts {
+        margin-top: 40px;
         flex-direction: column;
     }
     // .aditional_content_1 .main_content .two_posts .popular_post{
     //     max-width: 626px;
     // }
+    //content 1 end
+
+
+    //content 2 start
+    .aditional_content_2 .newest_posts_container{
+        flex-direction: column;
+    }
+    .aditional_content_2 .newest_posts{
+        max-width: 626px;
+    }
+    .aditional_content_2 .popular_post{
+        max-width: 626px;
+    }
+
+    .aditional_content_2 .post_title_container{
+        max-width: none;
+    }
+
+    .aditional_content_2 .popular_post_img{
+        max-width: none;
+    }
+    
     //content 2 end
 }
 

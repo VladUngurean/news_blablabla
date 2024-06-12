@@ -1,18 +1,23 @@
 <?php
 
-function render_posts($file_path, $post_id1, $post_id2 = '')
+function render_posts($file_path, $post_ids)
 {
     $json_data = file_get_contents($file_path);
     $posts = json_decode($json_data, true)['posts'];
 
-    $post_limit = 2;
+    // If $post_ids is not an array, convert it to an array
+    if (!is_array($post_ids)) {
+        $post_ids = array($post_ids);
+    }
+
+    $post_limit = 3;
     $post_count = 0;
 
     foreach ($posts as $post) {
         $post_id = $post['postID'];
 
-        // choose id's of posts to generate them
-        if (($post_id2 != '' && $post_id == $post_id2) || $post_id == $post_id1) {
+        // Check if the post_id is in the array of post_ids
+        if (in_array($post_id, $post_ids)) {
             $title = $post['postTitle']['ru'];
             $category = $post['postCategory']['ru'];
             $content = $post['postContent']['ru'];
@@ -23,11 +28,20 @@ function render_posts($file_path, $post_id1, $post_id2 = '')
             <a href="">
                 <div class="popular_post">';
 
-            if ($post_id2 == '') {
+            // If only one post ID is provided
+            if (count($post_ids) == 1) {
                 echo '
                 <div class="post_title_container">
                     <h2>Самые популярные темы</h2>
                     <p>С нами вы можете узнать больше.</p>
+                </div>
+                ';
+            }
+            if (count($post_ids) == 3) {
+                echo '
+                <div class="post_title_container">
+                    <h2>'.$title.'</h2>
+                    <p>'.$content.'</p>
                 </div>
                 ';
             }
@@ -42,14 +56,14 @@ function render_posts($file_path, $post_id1, $post_id2 = '')
 
             $post_count++;
 
-            if ($post_id2 == '') {
-                break;
-            } elseif ($post_count >= $post_limit) {
+            // Stop after reaching the post limit
+            if ($post_count >= $post_limit) {
                 break;
             }
         }
     }
 }
+
 
 function render_one_post($file_path, $post_id1)
 {
@@ -82,7 +96,7 @@ function render_one_post($file_path, $post_id1)
     }
 }
 
-function generate_random_posts($file_paths, $post_limit)
+function generate_random_posts($file_paths, $post_limit, $post_type)
 {
     $all_posts = [];
 
@@ -109,6 +123,7 @@ function generate_random_posts($file_paths, $post_limit)
         $date = $post['postDate'];
         $image = $post['postImage'];
 
+        if ($post_type == "side") {
         echo '
             <a href="">
                 <div class="sidebar_content_wraper">
@@ -119,6 +134,20 @@ function generate_random_posts($file_paths, $post_limit)
                     </div>
                 </div>
             </a>';
+        } elseif ($post_type == "main"){
+            echo '
+            <a href="">
+                <div class="popular_post">
+                    <div class="post_title_container">
+                        <h2>'.$title.'</h2>
+                        <p>'.$category.'</p>
+                    </div>
+                    <img class="popular_post_img" src="'. $image .'" alt="">
+                </div>
+            </a>';
+        }
+
+
 
         $post_count++;
     }
