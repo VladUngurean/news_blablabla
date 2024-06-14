@@ -21,11 +21,21 @@
 
         <div class="header_bot">
             <nav>
-                <a class="active_nav" href="">Еда и напитки</a>
-                <a href="">Охота и Рыбалка</a>
-                <a href="">Уход и Красота</a>
-                <a href="">Садоводство</a>
-                <a href="">Туризм</a>
+                <a class="active_nav" href="">
+                    <h2>Еда и напитки</h2>
+                </a>
+                <a href="">
+                    <h2>Охота и Рыбалка</h2>
+                </a>
+                <a href="">
+                    <h2>Уход и Красота</h2>
+                </a>
+                <a href="">
+                    <h2>Садоводство</h2>
+                </a>
+                <a href="">
+                    <h2>Туризм</h2>
+                </a>
             </nav>
         </div>
 

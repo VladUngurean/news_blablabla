@@ -4,24 +4,54 @@
             "title": "Welcome to [Your Website Name]!",
             "intro": "We're thrilled to have you here in our vibrant community of hobby enthusiasts and life hackers! Whether you're a foodie, a fishing and hunting aficionado, a health and beauty guru, a gardening enthusiast, or a passionate traveler, you've come to the right place.",
             "sections": {
-                "food_and_drinks": "Discover delicious recipes, cooking tips, and the latest trends in food and beverages. Whether you're a seasoned chef or just love experimenting in the kitchen, we have something for you.",
-                "fishing_and_hunting": "Get the best advice on fishing and hunting techniques, gear reviews, and locations to make your outdoor adventures unforgettable.",
-                "health_and_beauty": "Stay updated with the latest health tips, beauty hacks, and wellness advice to help you look and feel your best.",
-                "gardening": "Learn the secrets of successful gardening, from growing your own vegetables to creating stunning flower beds. Whether you're a novice or an experienced gardener, we have plenty of tips to help your garden thrive.",
-                "tourism": "Find inspiration for your next trip with our travel guides, destination reviews, and travel hacks to make your journeys smooth and enjoyable."
+                "food_and_drinks": {
+                    "title": "Food and drinks",
+                    "content": "Discover delicious recipes, cooking tips, and the latest trends in food and beverages. Whether you're a seasoned chef or just love experimenting in the kitchen, we have something for you."
+                },
+                "fishing_and_hunting": {
+                    "title": "Fishing and hunting",
+                    "content": "Get the best advice on fishing and hunting techniques, gear reviews, and locations to make your outdoor adventures unforgettable."
+                },
+                "health_and_beauty": {
+                    "title": "Health and beauty",
+                    "content": "Stay updated with the latest health tips, beauty hacks, and wellness advice to help you look and feel your best."
+                },
+                "gardening": {
+                    "title": "Gardening",
+                    "content": "Learn the secrets of successful gardening, from growing your own vegetables to creating stunning flower beds. Whether you're a novice or an experienced gardener, we have plenty of tips to help your garden thrive."
+                },
+                "tourism": {
+                    "title": "Tourism",
+                    "content": "Find inspiration for your next trip with our travel guides, destination reviews, and travel hacks to make your journeys smooth and enjoyable."
+                }
             },
             "chatbot_feature": "But that's not all! Our standout feature is our AI Chatbot, your personal assistant ready to answer any questions you have. Need a quick recipe idea? Looking for the best fishing spots? Want advice on starting a new beauty regimen? Just ask our AI Chatbot, and you'll get instant, helpful responses tailored to your needs.",
             "closing": "Dive in, explore, and make the most of your hobbies with [Your Website Name]. We're here to help you discover, learn, and enjoy every moment of your journey. Welcome aboard!"
         },
         "ru": {
-            "title": "Добро пожаловать на [Название вашего сайта]!",
+            "title": "Добро пожаловать на Blablabla!",
             "intro": "Мы рады приветствовать вас в нашем ярком сообществе любителей хобби и лайфхаков! Независимо от того, являетесь ли вы гурманом, увлекаетесь рыбалкой и охотой, интересуетесь здоровьем и красотой, садоводством или путешествиями, вы пришли в нужное место.",
             "sections": {
-                "food_and_drinks": "Откройте для себя вкусные рецепты, кулинарные советы и последние тенденции в мире еды и напитков. Независимо от того, являетесь ли вы опытным шеф-поваром или просто любите экспериментировать на кухне, у нас есть что-то для вас.",
-                "fishing_and_hunting": "Получите лучшие советы по технике рыбалки и охоты, обзоры снаряжения и мест, чтобы сделать ваши приключения на природе незабываемыми.",
-                "health_and_beauty": "Следите за последними советами по здоровью, лайфхаками по красоте и советами по уходу за собой, чтобы выглядеть и чувствовать себя наилучшим образом.",
-                "gardening": "Узнайте секреты успешного садоводства, от выращивания собственных овощей до создания потрясающих цветников. Независимо от того, являетесь ли вы новичком или опытным садоводом, у нас есть множество советов, чтобы ваш сад процветал.",
-                "tourism": "Найдите вдохновение для следующей поездки с нашими путеводителями, обзорами мест и советами по путешествиям, чтобы ваши поездки были гладкими и приятными."
+                "food_and_drinks": {
+                    "title": "Еда и напитки",
+                    "content": "Откройте для себя вкусные рецепты, кулинарные советы и последние тенденции в мире еды и напитков. Независимо от того, являетесь ли вы опытным шеф-поваром или просто любите экспериментировать на кухне, у нас есть что-то для вас."
+                },
+                "fishing_and_hunting": {
+                    "title": "Рыбалка и охота",
+                    "content": "Получите лучшие советы по технике рыбалки и охоты, обзоры снаряжения и мест, чтобы сделать ваши приключения на природе незабываемыми."
+                },
+                "health_and_beauty": {
+                    "title": "Здоровье и красота",
+                    "content": "Следите за последними советами по здоровью, лайфхаками по красоте и советами по уходу за собой, чтобы выглядеть и чувствовать себя наилучшим образом."
+                },
+                "gardening": {
+                    "title": "Садоводство",
+                    "content": "Узнайте секреты успешного садоводства, от выращивания собственных овощей до создания потрясающих цветников. Независимо от того, являетесь ли вы новичком или опытным садоводом, у нас есть множество советов, чтобы ваш сад процветал."
+                },
+                "tourism": {
+                    "title": "Туризм",
+                    "content": "Найдите вдохновение для следующей поездки с нашими путеводителями, обзорами мест и советами по путешествиям, чтобы ваши поездки были гладкими и приятными."
+                }
             },
             "chatbot_feature": "Но это еще не все! Наша главная особенность — это наш AI-чатбот, ваш личный помощник, готовый ответить на любые ваши вопросы. Нужна идея для быстрого рецепта? Ищете лучшие места для рыбалки? Хотите получить советы по началу нового режима красоты? Просто задайте вопрос нашему AI-чатботу, и вы получите мгновенные, полезные ответы, соответствующие вашим потребностям.",
             "closing": "Погружайтесь, исследуйте и наслаждайтесь своими хобби вместе с [Название вашего сайта]. Мы здесь, чтобы помочь вам открывать, учиться и наслаждаться каждым моментом вашего пути. Добро пожаловать!"
@@ -30,11 +60,26 @@
             "title": "Bine ați venit pe [Numele site-ului vostru]!",
             "intro": "Suntem încântați să vă avem aici în comunitatea noastră vibrantă de entuziaști ai hobby-urilor și trucuri pentru viață! Indiferent dacă sunteți pasionat de mâncare, pescuit și vânătoare, sănătate și frumusețe, grădinărit sau călătorii, ați ajuns la locul potrivit.",
             "sections": {
-                "food_and_drinks": "Descoperiți rețete delicioase, sfaturi de gătit și ultimele tendințe în domeniul mâncării și băuturilor. Indiferent dacă sunteți un bucătar experimentat sau doar vă place să experimentați în bucătărie, avem ceva pentru dvs.",
-                "fishing_and_hunting": "Obțineți cele mai bune sfaturi despre tehnici de pescuit și vânătoare, recenzii de echipamente și locații pentru a vă face aventurile în aer liber de neuitat.",
-                "health_and_beauty": "Rămâneți la curent cu cele mai recente sfaturi de sănătate, trucuri de frumusețe și sfaturi de wellness pentru a arăta și a vă simți cât mai bine.",
-                "gardening": "Învățați secretele grădinăritului de succes, de la cultivarea propriilor legume până la crearea de paturi de flori uimitoare. Indiferent dacă sunteți începător sau grădinar experimentat, avem o mulțime de sfaturi pentru a vă ajuta grădina să prospere.",
-                "tourism": "Găsiți inspirație pentru următoarea dvs. călătorie cu ghidurile noastre de călătorie, recenziile destinațiilor și trucurile de călătorie pentru a face călătoriile dvs. line și plăcute."
+                "food_and_drinks": {
+                    "title": "Mâncare și băuturi",
+                    "content": "Descoperiți rețete delicioase, sfaturi de gătit și ultimele tendințe în domeniul mâncării și băuturilor. Indiferent dacă sunteți un bucătar experimentat sau doar vă place să experimentați în bucătărie, avem ceva pentru dvs."
+                },
+                "fishing_and_hunting": {
+                    "title": "Pescuit și vânătoare",
+                    "content": "Obțineți cele mai bune sfaturi despre tehnici de pescuit și vânătoare, recenzii de echipamente și locații pentru a vă face aventurile în aer liber de neuitat."
+                },
+                "health_and_beauty": {
+                    "title": "Sănătate și frumusețe",
+                    "content": "Rămâneți la curent cu cele mai recente sfaturi de sănătate, trucuri de frumusețe și sfaturi de wellness pentru a arăta și a vă simți cât mai bine."
+                },
+                "gardening": {
+                    "title": "Grădinărit",
+                    "content": "Învățați secretele grădinăritului de succes, de la cultivarea propriilor legume până la crearea de paturi de flori uimitoare. Indiferent dacă sunteți începător sau grădinar experimentat, avem o mulțime de sfaturi pentru a vă ajuta grădina să prospere."
+                },
+                "tourism": {
+                    "title": "Turism",
+                    "content": "Găsiți inspirație pentru următoarea dvs. călătorie cu ghidurile noastre de călătorie, recenziile destinațiilor și trucurile de călătorie pentru a face călătoriile dvs. line și plăcute."
+                }
             },
             "chatbot_feature": "Dar asta nu e tot! Caracteristica noastră de bază este chatbotul nostru AI, asistentul dvs. personal gata să răspundă la orice întrebări aveți. Aveți nevoie de o idee rapidă de rețetă? Căutați cele mai bune locuri de pescuit? Doriți sfaturi despre începutul unui nou regim de frumusețe? Pur și simplu întrebați chatbotul nostru AI și veți primi răspunsuri instantanee și utile, adaptate nevoilor dvs.",
             "closing": "Intrați, explorați și bucurați-vă de hobby-urile dvs. cu [Numele site-ului vostru]. Suntem aici pentru a vă ajuta să descoperiți, să învățați și să vă bucurați de fiecare moment al călătoriei dvs. Bine ați venit!"
