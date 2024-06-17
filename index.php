@@ -20,16 +20,20 @@
 
     <section class="main_section content_section welcome_message">
         <div class="main_content">
+            <div class="welcome_message_text">
 
-            <h1>Добро пожаловать на Blablabla!</h1>
+                <h1>Добро пожаловать на Blablabla!</h1>
 
-            <h2>&nbsp; &nbsp; У нас вы сможете узнать захватывающие факты о ваших увлечениях, будь то <b>охота</b>, <b>рыбалка</b>, <b>садоводство</b> или <b>туризм</b>.
-                Мы также предлагаем информацию о повседневных навыках, таких как приготовление <b>еды и напитков</b>, <b>уход за здоровьем и красотой </b><span>(вы и так красивы &#x2665;&#xfe0f;)</span>.</h2>
+                <h2 class="text-clamp">
+                    &nbsp; &nbsp; У нас вы сможете узнать захватывающие факты о ваших увлечениях, будь то <b>охота</b>, <b>рыбалка</b>, <b>садоводство</b> или <b>туризм</b>.
+                    Мы также предлагаем информацию о повседневных навыках, таких как приготовление <b>еды и напитков</b>, <b>уход за здоровьем и красотой</b>. <br> <br>
+                    &nbsp; &nbsp; Но это еще не все! Наша уникальная особенность - это наш <b>AI Чатбот</b>, ваш личный помощник, готовый ответить на любые ваши вопросы.
+                    Нужна быстрая идея для рецепта? Ищете лучшие места для рыбалки? Хотите узнать о лучших способах ухода за кожей?
+                    <span>Просто спросите нашего AI Чатбота в правом нижнем углу</span>, и вы получите мгновенные и полезные ответы, подходящие под ваши нужды.
+                </h2>
+                <span class="read-more-toggle">... Узнать больше</span>
+            </div>
 
-            <h2>&nbsp; &nbsp; Но это еще не все! Наша уникальная особенность - это наш <b>AI Чатбот</b>, ваш личный помощник, готовый ответить на любые ваши вопросы.
-                Нужна быстрая идея для рецепта? Ищете лучшие места для рыбалки? Хотите узнать о лучших способах ухода за кожей?
-                <span>Просто спросите нашего AI Чатбота в правом нижнем углу</span>, и вы получите мгновенные и полезные ответы, подходящие под ваши нужды.
-            </h2>
         </div>
 
         <div class="sidebar_content sidebar_ads">
@@ -44,6 +48,21 @@
 
     </section>
     <?php // outputWelcomeMessage('en'); // Change 'en' to 'ru' or 'ro' for other languages ?>
+
+    <script>
+    document.querySelector('.read-more-toggle').addEventListener('click', function() {
+        var textElement = document.querySelector(".text-clamp");
+        if (!(textElement.classList.contains('text-expanded'))) {
+            // textElement.classList.remove('text-clamp');
+            textElement.classList.add('text-expanded');
+            this.textContent = ' Скрыть текст';
+        } else {
+            textElement.classList.remove('text-expanded');
+            // textElement.classList.add('text-clamp');
+            this.textContent = '... Узнать больше';
+        }
+    });
+    </script>
 
     <!-- content section start -->
     <section class="main_section content_section">
@@ -65,7 +84,7 @@
             </div>
         </div>
 
-        <div class="sidebar_content">
+        <div class="sidebar_content random_posts">
             <?php
             generate_random_posts(['posts.json', 'random.json'], 5, "side");
             ?>
@@ -144,6 +163,52 @@
         </div>
     </section>
     <!-- content section 2 end -->
+
+    <!-- footer section start -->
+
+    <section class="main_section">
+        <hr>
+        <footer>
+
+            <a class="logo" href="">Blablabla</a>
+            <div class="footer_social_media">
+                <a href="">
+                    <img src="/images/header/IG.SVG" alt="">
+                </a>
+                <a href="">
+                    <img src="/images/header/TG.SVG" alt="">
+                </a>
+                <a href="">
+                    <img src="/images/header/TK.SVG" alt="">
+                </a>
+                <a href="">
+                    <img src="/images/header/FB.SVG" alt="">
+                </a>
+            </div>
+
+            <div class="footer_links">
+                <a href="">
+                    <h2>Еда и напитки</h2>
+                </a>
+                <a href="">
+                    <h2>Охота и Рыбалка</h2>
+                </a>
+                <a href="">
+                    <h2>Уход и Красота</h2>
+                </a>
+                <a href="">
+                    <h2>Садоводство</h2>
+                </a>
+                <a href="">
+                    <h2>Туризм</h2>
+                </a>
+            </div>
+
+        </footer>
+    </section>
+
+    <!-- footer section end -->
+
 </body>
 
 </html>
